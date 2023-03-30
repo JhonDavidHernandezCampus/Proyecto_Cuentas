@@ -1,0 +1,8 @@
+header{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+}
+
+#dinero{
+    height: 60px;
+}

@@ -14,15 +14,24 @@
 </head>
 <body>
 
-    <header class="d-flex justify-content-center flex-column align-items-center "><!-- aqui se deben mostrar los datos -->
-        <h3>presupiuesto disponible</h3>
-        <h1>Aqui debe ir el dinero $$ money</h1>
+    <header class="d-flex justify-content-center flex-column align-items-center p-5"><!-- aqui se deben mostrar los datos -->
+        <h3 class="p-4">Presupuesto Disponible</h3>
+        <div class="d-flex justify-content-center flex-column align-items-center p-5 w-100" id="saldos">
+            <h1 class="p-2" id="saldo"></h1>
+    
+            <div class="d-flex align-items-center justify-content-between bg-primary w-25 m-3 rounded p-4" id="dinero">
+                <div>INGRESOS</div>
+                <div>
+                    $----------------------------
+                </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between bg-danger w-25 rounded p-4" id="dinero">
+                <div>EGRESOS</div>
+                <div>
+                    $----------------
+                </div>
+            </div>
 
-        <div class="d-flex align-items-center bg-primary">
-            <p>aqui debe ir el dinero que tenemos</p>
-        </div>
-        <div class="d-flex align-items-center bg-danger">
-            <p>aqui debe ir el dinero que hemos gastado</p>
         </div>
     </header>
 
@@ -47,12 +56,12 @@
 
     <footer><!-- aqui se deben mosytrar los ingresos y egresos  -->
         <div class="d-flex justify-content-center align-items-center m-5  ">
-            <div class="m-5" ><!-- los ingresos  -->
+            <div class="m-5" id="ingresos"><!-- los ingresos  -->
             <h1>ingresos</h1>
-
-                <div class="d-flex ">
+                <!-- <hr>
+                <div class="d-flex bg-danger">
                     <div>
-                        hola 1
+                        hola 1 
                     </div>
                     <div class="d-flex ">
                         <div>
@@ -63,6 +72,7 @@
                         </div>
                     </div>
                 </div>
+                <hr> -->
 
             </div>
 
