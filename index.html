@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="mail.js"  type="module" defer></script>
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Calculo_Cuentas</title>
+</head>
+<body>
+
+    <header class="d-flex justify-content-center flex-column align-items-center "><!-- aqui se deben mostrar los datos -->
+        <h3>presupiuesto disponible</h3>
+        <h1>Aqui debe ir el dinero $$ money</h1>
+
+        <div class="d-flex align-items-center bg-primary">
+            <p>aqui debe ir el dinero que tenemos</p>
+        </div>
+        <div class="d-flex align-items-center bg-danger">
+            <p>aqui debe ir el dinero que hemos gastado</p>
+        </div>
+    </header>
+
+    <hr>
+
+    <section class="d-flex justify-content-center align-items-center m-5 "><!-- aqui debe estar en formulario -->
+        <form action="" method="POST" id="formulario">
+            <select name="selector" id="" class="p-2 m-5">
+                <option value="" selected></option>
+                <option value="suma">+</option>
+                <option value="resta">-</option>
+            </select>
+            <input name="pago" type="text" placeholder="Que gasto es " class="p-2 m-5">
+            <input name="valor" type="number" placeholder="Valor" class="p-2 m-5 "appearance: none>
+            <button type="submit">icono</button>   
+        </form>
+        
+
+    </section>
+
+    <hr>
+
+    <footer><!-- aqui se deben mosytrar los ingresos y egresos  -->
+        <div class="d-flex justify-content-center align-items-center m-5  ">
+            <div class="m-5" ><!-- los ingresos  -->
+            <h1>ingresos</h1>
+
+                <div class="d-flex ">
+                    <div>
+                        hola 1
+                    </div>
+                    <div class="d-flex ">
+                        <div>
+                            hola 2
+                        </div>
+                        <div>
+                            hola 3
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="m-5"><!-- los egresos -->
+
+                <div class="" >
+                 <h1>Egresos</h1>
+
+                    <div class="d-flex ">
+                        <div>
+                            hola 1
+                        </div>
+                        <div class="d-flex ">
+                            <div>
+                                hola 2
+                            </div>
+                            <div>
+                                hola 3
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
