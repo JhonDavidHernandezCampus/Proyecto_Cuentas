@@ -13,7 +13,7 @@ datosForm(){
 export default{
 
     datosForm(){
-
+        
         const formulario = document.querySelector('#formulario');
         formulario.addEventListener('submit', function(e){            
             e.preventDefault(); // previene la acción por defecto del formulario
@@ -24,11 +24,31 @@ export default{
             const valor = parseInt(formulario.valor.value);
             const pago = formulario.pago.value;
             const selector = formulario.selector.value;
+            
+            const losdatos = { 
+                valor: valor,
+                pago: pago,
+                selector:selector
+            };
 
-            console.log("EL VALOR",valor);
-            console.log("EL PAGO",pago);
-            console.log("EL selector", selector);
+            console.log(datos);
 
+
+
+            const ws = new Worker("storage/wsMyFormulario.js", {type:"module"});
+            ws.postMessage({module:"menejoData", data: this.losdatos})
+
+
+
+
+            console.log(valor);
+            console.log(pago);
+            console.log( selector);
+            
+
+        
+
+            formulario.reset();
 
         })
     }
