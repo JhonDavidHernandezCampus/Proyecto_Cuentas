@@ -18,19 +18,19 @@
         <h3 class="p-4">Presupuesto Disponible</h3>
         <div class="d-flex justify-content-center flex-column align-items-center p-5 w-100" id="baners">
             <div class="saldo">
-                <h1 class="p-2">$---</h1>
+                <h1 class="p-2">Estas pobre</h1>
             </div>
             
             <div class="d-flex align-items-center justify-content-between bg-primary w-25 m-3 rounded p-4" id="dinero">
                 <div>INGRESOS</div>
                 <div>
-                    $----------------------------
+                    
                 </div>
             </div>
             <div class="d-flex align-items-center justify-content-between bg-danger w-25 rounded p-4" id="dinero">
                 <div>EGRESOS</div>
                 <div>
-                    $----------------
+                    
                 </div>
             </div>
 
@@ -43,8 +43,8 @@
         <form action="" method="POST" id="formulario">
             <select name="selector" id="" class="p-2 m-5">
                 <option value="" selected></option>
-                <option value="suma">+</option>
-                <option value="resta">-</option>
+                <option value="1">+</option>
+                <option value="2">-</option>
             </select>
             <input name="pago" type="text" placeholder="Que gasto es " class="p-2 m-5">
             <input name="valor" type="number" placeholder="Valor" class="p-2 m-5 "appearance: none>
@@ -57,30 +57,11 @@
     <hr>
 
     <footer><!-- aqui se deben mosytrar los ingresos y egresos  -->
-        <div class="d-flex justify-content-around  m-5">
-            <div class="m-5  w-25" id="ingresos"><!-- los ingresos  -->
-            <h1>ingresos</h1>
-                <!-- <hr>
-                <div class="d-flex bg-danger">
-                    <div>
-                        hola 1 
-                    </div>
-                    <div class="d-flex ">
-                        <div>
-                            hola 2
-                        </div>
-                        <div>
-                            hola 3
-                        </div>
-                    </div>
-                </div>
-                <hr> -->
+        <div class="d-flex justify-content-around align-items-start m-5">
 
-            </div>
-
-            <div class="m-5 w-25"><!-- los egresos -->
-                <div class="m-5  w-25" id="egresos">
-                <h1>Egresos</h1><!-- 
+            <!-- los egresos -->
+                <div class=" w-25 bg-danger " id="ingresos">
+                    <h1 class="">Ingresos</h1><!-- 
 
                     <div class="d-flex ">
                         <div>
@@ -98,7 +79,25 @@
     -->
                 </div>
 
-            </div>
+            <!-- los egresos -->
+                <div class=" w-25 bg-danger " id="egresos">
+                    <h1 class="">Egresos</h1><!-- 
+
+                    <div class="d-flex ">
+                        <div>
+                            hola 1
+                        </div>
+                        <div class="d-flex ">
+                            <div>
+                                hola 2
+                            </div>
+                            <div>
+                                hola 3
+                            </div>
+                        </div>
+                    </div>
+    -->
+                </div>
         </div>
     </footer>
 
