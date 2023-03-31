@@ -40,15 +40,15 @@
     <hr>
 
     <section class="d-flex justify-content-center align-items-center m-5 "><!-- aqui debe estar en formulario -->
-        <form action="" method="POST" id="formulario">
+        <form action="" method="POST" id="formulario" class="d-flex align-items-center">
             <select name="selector" id="" class="p-2 m-5">
                 <option value="" selected></option>
                 <option value="1">+</option>
                 <option value="2">-</option>
             </select>
-            <input name="pago" type="text" placeholder="Que gasto es " class="p-2 m-5 " required>
-            <input name="valor" type="number" placeholder="Valor" class="p-2 m-5 " required>
-            <button type="submit">icono</button>   
+            <input name="pago" type="text" placeholder="Que gasto es " class="form-control p-2 m-5" required>
+            <input name="valor" type="number" placeholder="Valor" class="p-2 m-5 form-control estilo-input " required>
+            <button type="submit" class="btn btn-icon h-25"  id="btn"> <i class="fas fa-search"><img src="img/marca-de-verificacion.png" alt="" class="h-25 w-25"></i> </button>   
         </form>
         
 
@@ -60,7 +60,7 @@
         <div class="d-flex justify-content-around align-items-start m-5">
 
             <!-- los egresos -->
-                <div class=" w-25 bg-danger " id="ingresos">
+                <div class=" w-25 " id="ingresos">
                     <h1 class="">Ingresos</h1><!-- 
 
                     <div class="d-flex ">
@@ -80,7 +80,7 @@
                 </div>
 
             <!-- los egresos -->
-                <div class=" w-25 bg-danger " id="egresos">
+                <div class=" w-25 " id="egresos">
                     <h1 class="">Egresos</h1><!-- 
 
                     <div class="d-flex ">

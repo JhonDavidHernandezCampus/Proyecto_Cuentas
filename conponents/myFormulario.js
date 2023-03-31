@@ -4,15 +4,13 @@ export default{
 
     
     datosForm(){
+
         formulario.addEventListener('submit', function(e){     
+            e.preventDefault(); // previene la acción por defecto del formulario
              
             config.datos();
-            console.log(config)
-            
             const losdatos= (this, JSON.parse(localStorage.getItem("myFormulario")));
-            console.log(localStorage.getItem("myFormulario"),"los datos de localStorage");
              
-            e.preventDefault(); // previene la acción por defecto del formulario
             const ws = new Worker("storage/wsMyFormulario.js", {type:"module"});
             ws.postMessage({module:"saldoPositivo", data: losdatos})
             
@@ -25,7 +23,7 @@ export default{
                 document.querySelector("#saldos").innerHTML=e.data;
             })
             
-            formulario.reset(); 
+            //formulario.reset(); 
 
         })  
 
