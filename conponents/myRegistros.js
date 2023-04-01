@@ -14,12 +14,15 @@ export default{
             ws.postMessage({module:"showRegistros",data:losdatos});
 
             ws.addEventListener("message",(e)=>{
+                let doc = new DOMParser().parseFromString(e.data , "text/html");
 
-            } )
-
-
+                (losdatos.selector == "1")?document.querySelector("#ingresos").append(...doc.body.children)
+                :document.querySelector("#egresos").append(...doc.body.children)
+                
+                
+                ws.terminate();
+            })
+            
         })
-        
-
     }
 }

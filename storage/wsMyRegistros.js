@@ -1,5 +1,5 @@
 let wsMyRegistros = {
-    showRegistros(){
+    showRegistros(p1){
         console.log(p1,"esto esta en agregar");
 
         return `<hr>
