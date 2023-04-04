@@ -1,3 +1,10 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+
+
 header{
     background-image: url(../img/fondo.png);
     background-size: cover;

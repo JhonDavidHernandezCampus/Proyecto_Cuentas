@@ -4,5 +4,3 @@ import myRegistros from "./conponents/myRegistros.js";
 myFormulario.datosForm();
 
 myRegistros.showregistros();
-
-

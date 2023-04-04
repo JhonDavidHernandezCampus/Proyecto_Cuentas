@@ -6,9 +6,7 @@ export default{
         
         formulario.addEventListener('submit', function(e){ 
             e.preventDefault();
-            console.log(config);
             const losdatos = (this, JSON.parse(localStorage.getItem("myFormulario")));
-            console.log(losdatos);
 
             const ws  = new Worker("storage/wsMyRegistros.js",{type:"module"})
             ws.postMessage({module:"showRegistros",data:losdatos});

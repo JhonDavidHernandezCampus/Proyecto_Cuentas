@@ -1,6 +1,6 @@
 let wsMyRegistros = {
     showRegistros(p1){
-        console.log(p1,"esto esta en agregar");
+        console.log(p1.selector==="1");
 
         return `<hr>
         <div class="d-flex justify-content-around w-100">
@@ -8,8 +8,8 @@ let wsMyRegistros = {
                 ${p1.pago} 
             </div>
             <div class="d-flex ">
-                <div>
-                    ${p1.valorenvio}
+                <div class="${(p1.selector=="1")?"text-primary":"text-danger"}">
+                    ${(p1.selector=="1")?"+ ":"-"}  $${p1.valorenvio}
                 </div>
             </div>
         </div>

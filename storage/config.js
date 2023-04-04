@@ -10,6 +10,7 @@ export default{
         const datosObj = Object.fromEntries(datos.entries());
             
         const valor = parseInt(formulario.valor.value);
+        Math.abs(valor);
         const pago = formulario.pago.value;
         const selector = formulario.selector.value;
             
