@@ -1,6 +1,5 @@
 let wsMyRegistros = {
     showRegistros(p1){
-        console.log(p1.selector==="1");
 
         return `<hr>
         <div class="d-flex justify-content-around w-100">

@@ -13,3 +13,7 @@ header{
 #dinero{
     height: 60px;
 }
+.chart{
+    width: 100%;
+    min-height: 500px;
+}
