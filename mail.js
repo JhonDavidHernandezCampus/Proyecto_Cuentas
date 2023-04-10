@@ -7,6 +7,9 @@ myFormulario.datosForm();
 myRegistros.showregistros();
 
 
-
 myTablas.showTablas();
-myTablas.showTablas2();
+/* 
+myTablas.showTablas2(); */
+
+
+

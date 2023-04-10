@@ -1,7 +1,7 @@
 
 let ingresos=0 ;
 let egresos=0 ;
-
+let nombre = [];
 export default{
     datos(){
         const formulario = document.querySelector('#formulario');
@@ -17,6 +17,12 @@ export default{
         (selector =="1")?ingresos = ingresos+ valor
         :egresos = egresos + valor;
 
+        nombre.push(datosObj.pago)
+        console.log("en el config nombre", nombre);
+        let datosTablas={
+            nombre
+        }
+
         let losdatos = { 
             valorenvio:valor,                
             pago: pago,
@@ -25,6 +31,9 @@ export default{
             egresos:egresos    
         };
         localStorage.setItem("myFormulario",JSON.stringify(losdatos));
+
+        localStorage.setItem("paraTablas",JSON.stringify(datosTablas));
+
     }
 
 }
