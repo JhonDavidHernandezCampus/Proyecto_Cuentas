@@ -9,6 +9,7 @@ let wsMyRegistros = {
             <div class="d-flex ">
                 <div class="${(p1.selector=="1")?"text-primary":"text-danger"}">
                     ${(p1.selector=="1")?"+ ":"-"}  $${p1.valorenvio}
+                    
                 </div>
             </div>
         </div>

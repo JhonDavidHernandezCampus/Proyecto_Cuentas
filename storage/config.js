@@ -2,6 +2,8 @@
 let ingresos=0 ;
 let egresos=0 ;
 let nombre = [];
+let valores = [];
+
 export default{
     datos(){
         const formulario = document.querySelector('#formulario');
@@ -17,10 +19,15 @@ export default{
         (selector =="1")?ingresos = ingresos+ valor
         :egresos = egresos + valor;
 
+        valores.push(valor)
         nombre.push(datosObj.pago)
-        console.log("en el config nombre", nombre);
+        console.log("en el config nombre es :", nombre);
+        console.log("en el config calores es :", valores);
+
+
         let datosTablas={
-            nombre
+            nombre,
+            valores
         }
 
         let losdatos = { 
