@@ -1,7 +1,5 @@
 import config from "../storage/config.js";
-
 export default {
-
 
   showTablas() {
     formulario.addEventListener('submit', () => {
@@ -9,22 +7,6 @@ export default {
 
       let datosTablas = (this, JSON.parse(localStorage.getItem("paraTablas")))
 
-      /* function color(datosTablas) {
-        if (datosTablas.selector == "2") {
-          console.log("si");
-          return {
-            color: 'red',
-          };
-        } else {
-          console.log("no");
-
-          return {
-            color: 'blue'
-          };
-        }
-      } */
-
-      console.log(datosTablas, "en las tablas ");
       const initCharts = () => {
         const chart1 = echarts.init(document.querySelector("#chart1"));
         const chart2 = echarts.init(document.querySelector("#chart2"));
@@ -63,8 +45,11 @@ export default {
               color(params) {
                 // Obtener el índice de la columna actual
                 const columnIndex = params.dataIndex;
+
                 // Obtener el valor de `selector` para esa columna
                 const selectorValue = datosTablas.selector[columnIndex];
+
+
                 // Establecer el color en función de `selector`
                 if (selectorValue === "1") {
                   return 'blue';
@@ -127,7 +112,6 @@ export default {
         };
       };
 
-      console.log(datosTablas);
       initCharts();
     })
   }

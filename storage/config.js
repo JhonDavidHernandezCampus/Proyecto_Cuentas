@@ -32,12 +32,12 @@ export default{
             valores,
             selector:selector,
             ingresos:ingresos,
-            egresos:egresos 
+            egresos:egresos
         }
 
         let losdatos = { 
-            valorenvio:valor,                
-            pago: pago,
+            valorenvio:valor.toLocaleString(),                
+            pago: pago.toLocaleString(),
             selector:selector,
             ingresos:ingresos,
             egresos:egresos    

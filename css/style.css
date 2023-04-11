@@ -6,7 +6,7 @@ body{
 
 
 header{
-    background-image: url(../img/fondo.png);
+    background-image: url(../img/fondo-abstracto-azul-formas-geometricas_1035-17545.avif);
     background-size: cover;
 }
 
@@ -23,7 +23,9 @@ header{
 #datos{
     max-height: 300px;
     overflow: scroll;
+}
 
-
-
+#eliminar{
+    width: 60px;
+    height: 45px;
 }
