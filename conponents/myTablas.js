@@ -60,25 +60,20 @@ export default {
             data: datosTablas.valores,
             type: 'bar',
             itemStyle: {
-              /* color(datosTablas) {
-                if (datosTablas.selector == "1") {
-                  console.log("si");
-                  return {
-                    color: 'red',
-                  };
+              color(params) {
+                // Obtener el índice de la columna actual
+                const columnIndex = params.dataIndex;
+                // Obtener el valor de `selector` para esa columna
+                const selectorValue = datosTablas.selector[columnIndex];
+                // Establecer el color en función de `selector`
+                if (selectorValue === "1") {
+                  return 'blue';
+                } else if (selectorValue === "2") {
+                  return 'red';
                 } else {
-                  console.log("no");
-        
-                  return {
-                    color: 'blue'
-                  };
+                  return 'green';
                 }
-              } */
-
-              /* formatter:
-              function (datosTablas){
-                (datosTablas.selector == "1")?console.log("verdadero"):console.log("falso")
-              } */
+              }  
             },
             showBackground: false,/* sombra de la columna */
             backgroundStyle: {

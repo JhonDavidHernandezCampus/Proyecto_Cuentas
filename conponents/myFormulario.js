@@ -23,7 +23,7 @@ export default{
                 ws.terminate();
             })
             
-            //formulario.reset(); 
+            formulario.reset(); 
 
         })  
 
