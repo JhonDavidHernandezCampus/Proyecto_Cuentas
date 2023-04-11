@@ -1,6 +1,5 @@
 let wsMyRegistros = {
     showRegistros(p1){
-
         return `<hr>
         <div class="d-flex justify-content-around w-100">
             <div>
@@ -15,9 +14,6 @@ let wsMyRegistros = {
         </div>
         <hr>`
     } 
-    
-
-    
 }
 
 self.addEventListener("message", (e)=> {

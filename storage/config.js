@@ -6,8 +6,13 @@ let valores = [];
 
 export default{
     datos(){
+        /* esto es para que la menoria se guarde en el local storage completa */
+        let datosA=[];
+        let datosGuardados = localStorage.getItem('formulario');
+        datosA = JSON.parse(datosGuardados) || [];
+
+        /* aqui esta toda la data del formulario */
         const formulario = document.querySelector('#formulario');
-        
         const datos = new FormData(formulario);
         const datosObj = Object.fromEntries(datos.entries());
             
@@ -18,16 +23,16 @@ export default{
             
         (selector =="1")?ingresos = ingresos+ valor
         :egresos = egresos + valor;
-
         valores.push(valor)
         nombre.push(datosObj.pago)
-        console.log("en el config nombre es :", nombre);
-        console.log("en el config calores es :", valores);
 
 
         let datosTablas={
             nombre,
-            valores
+            valores,
+            selector:selector,
+            ingresos:ingresos,
+            egresos:egresos 
         }
 
         let losdatos = { 
@@ -37,8 +42,11 @@ export default{
             ingresos:ingresos,
             egresos:egresos    
         };
-        localStorage.setItem("myFormulario",JSON.stringify(losdatos));
 
+        datosA.push(losdatos);
+        //console.log(datosA);
+
+        localStorage.setItem("myFormulario",JSON.stringify(datosA));
         localStorage.setItem("paraTablas",JSON.stringify(datosTablas));
 
     }

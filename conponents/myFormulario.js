@@ -11,7 +11,7 @@ export default{
             const losdatos= (this, JSON.parse(localStorage.getItem("myFormulario")));
             
             const ws = new Worker("storage/wsMyFormulario.js", {type:"module"});
-            ws.postMessage({module:"saldoPositivo", data: losdatos})
+            ws.postMessage({module:"saldoPositivo", data: losdatos[0]})
             
             ws.addEventListener("message", (e) =>{
 
