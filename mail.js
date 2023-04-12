@@ -9,6 +9,7 @@ myRegistros.showregistros();
 
 
 myTablas.showTablas();
+
 /* 
 myTablas.showTablas2(); */
 
